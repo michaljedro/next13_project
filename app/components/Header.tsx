@@ -1,5 +1,7 @@
+"use client";
 import { useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
+
 export default function Header() {
   const [location, setLocation] = useState("");
 
@@ -8,11 +10,11 @@ export default function Header() {
   const handleLocationChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setLocation(e.target.value);
   };
-
   const handleLocationClick = () => {
     if (location === "banana") return;
     router.push("/search");
   };
+
   return (
     <div className="h-64 bg-gradient-to-r from-[#0f1f47] to-[#5f6984] p-2">
       <div className="text-center mt-10">
