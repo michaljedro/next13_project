@@ -21,7 +21,6 @@ export default function RestaurantMenu() {
             <Menu />
           </div>
         </div>
-        {/* DESCRIPTION PORTION */}
       </main>
     </main>
   );
