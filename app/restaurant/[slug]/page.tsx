@@ -1,15 +1,14 @@
-import Header from "../../restaurant/[slug]/components/Header";
-import RestaurantNavbar from "../../restaurant/[slug]/components/RestaurantNavbar";
-import Title from "../../restaurant/[slug]/components/Title";
-import Rating from "../../restaurant/[slug]/components/Rating";
-import Description from "../../restaurant/[slug]/components/Description";
-import Images from "../../restaurant/[slug]/components/Images";
-import Reviews from "../../restaurant/[slug]/components/Reviews";
-import ReservationCard from "../../restaurant/[slug]/components/ReservationCard";
+import RestaurantNavbar from "./components/RestaurantNavbar";
+import Title from "./components/Title";
+import Rating from "./components/Rating";
+import Description from "./components/Description";
+import Images from "./components/Description";
+import Reviews from "./components/Reviews";
+import ReservationCard from "./components/ReservationCard";
+import Header from "./components/Header";
 export default function RestaurantDetails() {
   return (
-    <>
-      <Header />
+    <main className="bg-gray-100 min-h-screen w-screen">
       <div className="flex m-auto w-2/3 justify-between items-start 0 -mt-11">
         <div className="bg-white w-[70%] rounded p-3 shadow">
           <RestaurantNavbar />
@@ -23,6 +22,6 @@ export default function RestaurantDetails() {
           <ReservationCard />
         </div>
       </div>
-    </>
+    </main>
   );
 }

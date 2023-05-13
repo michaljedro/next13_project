@@ -6,7 +6,7 @@ export default function Navbar() {
         href="/restaurant/tuti-santi"
         className="font-bold text-gray-700 text-2xl"
       >
-        OpenTable
+        Tuti-Santi
       </Link>
       <div>
         <div className="flex">
